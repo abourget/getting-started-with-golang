@@ -13,7 +13,7 @@ Otherwise, Go to:
 and download and install the .PKG package. Uninstall any previous
 install
 
-* If a previous version was already installed, run:
+If a previous version was already installed, run:
 
     sudo rm -rf /usr/local/go
 
