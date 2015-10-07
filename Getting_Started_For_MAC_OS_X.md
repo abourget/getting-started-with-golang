@@ -1,28 +1,27 @@
-Getting Started with Golang - Windows
-=====================================
+Getting Started with Golang - Mac OS X
+======================================
 
-Install Go
-----------
+Install Go 1.5+
+---------------
 
-Go to:
+Make sure you have Go 1.5 minimum (with `go version`)
+
+Otherwise, Go to:
 
 * http://golang.org/dl/
 
-and download and install the .MSI package WITH ALL DEFAULT. Just hit
-NEXT.
+and download and install the .PKG package. Uninstall any previous
+install
 
-* If a previous version was already installed, go to "Add / Remove
-  Programs", and remove it beforehand.
+* If a previous version was already installed, run:
+
+    sudo rm -rf /usr/local/go
 
 The GOPATH is where all your Go code will live.
 
-Create new folder in C:\ named "GoPath"
+Run:
 
-Go to the "System" control panel, click the "Advanced" tab. Select
-"Environment Variables" and under "System variables":
-
- * add GOPATH variable, set it to "C:\GoPath"
- * add GO15VENDOREXPERIMENT, set it to "1"
+    mkdir ~/go
 
 
 Install Git
@@ -47,7 +46,8 @@ Install go tools
 Open a NEW terminal (with new env vars), paste this in to install
 those sweet tools:
 
-    go get -u -ldflags -H=windowsgui github.com/nsf/gocode/...
+    export GOPATH=$HOME/go
+    go get -u github.com/nsf/gocode/...
     go get -u github.com/abourget/godef/...
     go get -u golang.org/x/tools/cmd/...
 
@@ -86,8 +86,8 @@ Run
 
 This opens Atom.  Tweak `~/.profile` to look like these, and *save* the file:
 
-    export GOPATH=/c/GoPath
-    export PATH=/c/GoPath/bin:$PATH
+    export GOPATH=$HOME/go
+    export PATH=$HOME/go/bin:$PATH
     export GO15VENDOREXPERIMENT=1
     eval $(ssh-agent)
     ssh-add $HOME/.ssh/id_rsa
@@ -150,20 +150,14 @@ GitHub will ask you to confirm with your GitHub password.
 Check out your first project, get ready to run and build
 --------------------------------------------------------
 
-Open "Git Gui" (right click on the Desktop, or run `git gui` in Git
-bash)
+In a terminal, run:
 
-Select `Clone Existing Repository`, punch in:
+    mkdir -p $GOPATH/src/github.com/abourget
+    cd $GOPATH/src/github.com/abourget
+    git clone git@github.com:abourget/getting-started-with-golang
 
-* Source location: `git@github.com:abourget/getting-started-with-golang`
-* Target directory: `C:\GoPath\src\github.com\abourget\getting-started-with-golang`
+    cd getting-started-with-golang
 
-Go to Atom, select "File" -> "Add Project Folder", and navigate to
-`C:\GoPath\src\github.com\abourget\getting-started-with-golang`.
-
-In `Git Bash`, run:
-
-    cd /c/GoPath/src/github.com/abourget/getting-started-with-golang
     go install -v
     getting-started-with-golang
 
