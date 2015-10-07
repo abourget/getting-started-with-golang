@@ -31,13 +31,7 @@ Go to:
 
 * http://git-scm.com/downloads
 
-Download and install:
-
-* BUT HEY! when asked to select how to "Adjust your PATH environment",
-  select the SECOND choice which is "Use Git from the Windows Command
-  Prompt".
-
-* Continue on with the defaults.
+Download and install.
 
 
 Install go tools
@@ -84,13 +78,13 @@ Run
 
     atom ~/.profile
 
-This opens Atom.  Tweak `~/.profile` to look like these, and *save* the file:
+If you use `zsh`, tweak `~/.zshrc` instead.
+
+This opens Atom.  Tweak your profile file to add these lines and *save* the file:
 
     export GOPATH=$HOME/go
     export PATH=$HOME/go/bin:$PATH
     export GO15VENDOREXPERIMENT=1
-    eval $(ssh-agent)
-    ssh-add $HOME/.ssh/id_rsa
 
 Back to `Git Bash` terminal, run:
 
