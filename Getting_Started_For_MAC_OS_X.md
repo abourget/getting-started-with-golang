@@ -40,6 +40,7 @@ Install go tools
 Open a NEW terminal (with new env vars), paste this in to install
 those sweet tools:
 
+    # if in zsh, do also: export PATH=/usr/local/go/bin:$PATH
     export GOPATH=$HOME/go
     go get -u github.com/nsf/gocode/...
     go get -u github.com/abourget/godef/...
