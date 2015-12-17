@@ -51,6 +51,8 @@ those sweet tools:
     go get -u github.com/abourget/godef/...
     go get -u golang.org/x/tools/cmd/...
 
+You might see an error with `godoc`. Ignore it.
+
 
 Install Atom
 ------------
