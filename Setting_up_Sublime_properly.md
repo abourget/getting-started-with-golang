@@ -8,7 +8,7 @@ Setup environment variables:
 
  * Hit `Windows+S`, type in `environment variables` and start `Edit the system environment variables`.
 
- * In the `Advanced` tab, click the `Environment variables` (lower part of the window).
+ * Go to the `Advanced` tab, click the `Environment variables` (lower part of the window).
 
  * Under `System variables`:
 
@@ -16,7 +16,7 @@ Setup environment variables:
    * modify `Path` and append the value `;C:\GoPath\bin` (separate the previous path with the `;`)
    * set `GOROOT` to value `C:\Go`.
 
- * If you're going to use `Git Bash`, dump this in your `~/.profile` (both Mac OS X and Windows should work with that):
+ * If you're going to use `Git Bash`, dump this in your `~/.profile` (`%USERPROFILE%/.profile` under Windows). Both Mac OS X and Windows should work with that configuration:
 
 ```
 export GOPATH=/c/GoPath
