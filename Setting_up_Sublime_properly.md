@@ -1,8 +1,8 @@
 Sublime for Go (golang), setup properly
 =======================================
 
-| This setup assumes `C:\GoPath` as your GOPATH.  Changes any
-| occurrences of this string into your GOPATH if you chose otherwise.
+> This setup assumes `C:\GoPath` as your GOPATH.  Changes any
+> occurrences of this string into your GOPATH if you chose otherwise.
 
 Setup environment variables:
 
