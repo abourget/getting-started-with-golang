@@ -33,10 +33,7 @@ Install Sublime plugins:
   `Package Control: Install Package` in the list. If you don't see
   that, install `Package Control` above.
 
-* If `Package Control: Install Package` is shown, hit `<Enter>` to pop the next box.
-
-
-* Punch in `GoSublime` and hit enter.  It will install [GoSublime](https://github.com/DisposaBoy/GoSublime)
+* If `Package Control: Install Package` is shown, hit `<Enter>` to pop the next box. Type in `GoSublime` and hit enter.  It will install [GoSublime](https://github.com/DisposaBoy/GoSublime)
 
 * Hit `Control+Shift+P`, type in `package install`, hit `<Enter>` and
   type in `GoGuru`. Hit `<Enter>` again to install [GoGuru](https://github.com/alvarolm/GoGuru).
