@@ -97,3 +97,8 @@ Restart Sublime Text 3
 
 If you have any issues, please open an issue on this repo.. I want
 that recipe to be flawless to onboard new Go developers on Sublime.
+
+On Mac, you might have to restart your session, so that the
+`~/.profile` changes are propagated to your running
+session. Otherwise, try starting Sublime from a terminal which has the
+`GOPATH` vars set.
