@@ -48,7 +48,7 @@ Install Sublime plugins:
   type in `SublimeLinter golint`. Hit `<Enter>` again to install [SublimeLinter-contrib-golint](https://github.com/sirreal/SublimeLinter-contrib-golint).
 
 * Hit `Control+Shift+P`, type in `package install`, hit `<Enter>` and
-  type in `SublimeLinter gotype`. Hit `<Enter>` again to install [SublimeLinter-contrib-golint](https://github.com/sirreal/SublimeLinter-contrib-gotype).
+  type in `SublimeLinter gotype`. Hit `<Enter>` again to install [SublimeLinter-contrib-gotype](https://github.com/sirreal/SublimeLinter-contrib-gotype).
 
 Install some go command line tools:
 
