@@ -16,14 +16,15 @@ NEXT.
 
 Create your GOPATH
 ------------------
+
 The GOPATH is where all your Go code will live.
 
-Create new folder in C:\ named "GoPath"
+Create new folder in `C:\` named `GoPath`
 
 Go to the `System` control panel, click the `Advanced` tab. Select
 `Environment Variables` and under `System variables`:
 
- * add GOPATH variable, set it to "C:\GoPath"
+ * Add `GOPATH` with value `C:\GoPath`
 
 
 Install Git
