@@ -4,22 +4,24 @@ Getting Started with Golang - Windows
 Install Go
 ----------
 
-Go to:
+Download Go from:
 
 * http://golang.org/dl/
 
 and download and install the .MSI package WITH ALL DEFAULT. Just hit
 NEXT.
 
-* If a previous version was already installed, go to "Add / Remove
-  Programs", and remove it beforehand.
+> * If a previous version was already installed, go to "Add / Remove
+>   Programs", and remove it beforehand.
 
+Create your GOPATH
+------------------
 The GOPATH is where all your Go code will live.
 
 Create new folder in C:\ named "GoPath"
 
-Go to the "System" control panel, click the "Advanced" tab. Select
-"Environment Variables" and under "System variables":
+Go to the `System` control panel, click the `Advanced` tab. Select
+`Environment Variables` and under `System variables`:
 
  * add GOPATH variable, set it to "C:\GoPath"
 
@@ -27,23 +29,15 @@ Go to the "System" control panel, click the "Advanced" tab. Select
 Install Git
 -----------
 
-Go to:
+Download from:
 
 * http://git-scm.com/downloads
-
-Download and install:
-
-* BUT HEY! when asked to select how to "Adjust your PATH environment",
-  select the SECOND choice which is "Use Git from the Windows Command
-  Prompt".
-
-* Continue on with the defaults.
 
 
 Install go tools
 ----------------
 
-Open a NEW terminal (with new env vars), paste this in to install
+Open a NEW Command Prompt (`cmd.exe` with new env vars), paste this in to install
 those sweet tools:
 
     go get -u -ldflags -H=windowsgui github.com/nsf/gocode/...
@@ -53,57 +47,52 @@ those sweet tools:
 You might see an error with `godoc`. Ignore it.
 
 
-Install Atom
-------------
+Install VisualStudio Code
+-------------------------
 
-Atom has the best support for coding in Go, has excellent plugins and
-works across platforms. Throw Sublime Text away and use Atom.
+VisualStudio Code has one of the best support for coding in Go. It has excellent plugins and
+works across platforms.
 
-Go to:
+Download from:
 
-* https://atom.io/
+* https://code.visualstudio.com/
 
-Download and install (it will open), and once in there:
+After installation, do:
 
- * In the Welcome Guide
+ * Hit <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and type in `Install exte`
+ 
+   * Hit `Enter` to accept `Install extensions`
 
-   * Click "Install package"
+   * From the list, select `Go`, and click `Install`. Wait and then click `Enable`.
+   
+   
+Setup `Go` environment variables
+--------------------------------
 
-     * Click "Open Installer"
+In VS Code, open `%USERPROFILE%/.profile`.
 
-   * Search "go-plus" (by joefitzgerald)
-
-   * Install it
-
-
-Setup `Git` and `bash` properly
--------------------------------
-
-Right click on the desktop, and select "Git Bash Here"
-
-Run
-
-    atom ~/.profile
-
-This opens Atom.  Tweak `~/.profile` to look like these, and *save* the file:
+Tweak it and add these:
 
     export GOPATH=/c/GoPath
     export PATH=/c/GoPath/bin:$PATH
-    export GO15VENDOREXPERIMENT=1
-    eval $(ssh-agent)
-    ssh-add $HOME/.ssh/id_rsa
+    # Uncomment to load your SSH keys when you open Git Bash
+    # eval $(ssh-agent)
+    # ssh-add $HOME/.ssh/id_rsa
 
-Back to `Git Bash` terminal, run:
 
-    atom ~/.gitconfig
+Setup of global `Git` configuration
+-----------------------------------
 
-Edit the `~/.gitconfig` file to make sure similar lines are in there:
+Open the file `%USERPROFILE%/.gitconfig` in VS Code.
+
+Make sure similar lines are in there:
 
     [user]
 	name = Your Name
 	email = yourmail@example.com
 
-Save the files, and exit.
+Save & exit.
+
 
 
 Setup GitHub authentication
