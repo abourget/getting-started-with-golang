@@ -69,7 +69,7 @@ After installation, do:
 
  * Hit <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and type in `Install exte`
  
-   * Hit `Enter` to accept `Install extentions`
+   * Hit `Enter` to accept `Install extensions`
 
    * From the list, select `Go`, and click `Install`. Wait and then click `Enable`.
 
