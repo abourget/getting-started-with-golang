@@ -1,8 +1,8 @@
 Getting Started with Golang - Mac OS X
 ======================================
 
-Install Go
-----------
+Install Go (without brew)
+-------------------------
 
 Download Go from:
 
@@ -14,6 +14,15 @@ install.
 > If a previous version was already installed, run:
 > 
 >     sudo rm -rf /usr/local/go
+
+Install Go (with brew)
+----------------------
+
+    brew install go
+
+
+Create your GOPATH
+------------------
 
 The GOPATH is where all your Go code will live.
 
