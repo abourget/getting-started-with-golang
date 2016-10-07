@@ -1,21 +1,19 @@
 Getting Started with Golang - Mac OS X
 ======================================
 
-Install Go 1.5+
----------------
+Install Go
+----------
 
-Make sure you have Go 1.5 minimum (with `go version`)
-
-Otherwise, Go to:
+Download Go from:
 
 * http://golang.org/dl/
 
 and download and install the .PKG package. Uninstall any previous
-install
+install.
 
-If a previous version was already installed, run:
-
-    sudo rm -rf /usr/local/go
+> If a previous version was already installed, run:
+> 
+>     sudo rm -rf /usr/local/go
 
 The GOPATH is where all your Go code will live.
 
@@ -27,17 +25,16 @@ Run:
 Install Git
 -----------
 
-Go to:
+Download from:
 
 * http://git-scm.com/downloads
 
-Download and install.
 
 
 Install go tools
 ----------------
 
-Open a NEW terminal (with new env vars), paste this in to install
+Open a NEW Terminal (with new env vars), paste this in to install
 those sweet tools:
 
     # if in zsh, do also: export PATH=/usr/local/go/bin:$PATH
@@ -49,56 +46,50 @@ those sweet tools:
 You might see an error with `godoc`. Ignore it.
 
 
-Install Atom
-------------
+Install VisualStudio Code
+-------------------------
 
-Atom has the best support for coding in Go, has excellent plugins and
-works across platforms. Throw Sublime Text away and use Atom.
+VisualStudio Code has one of the best support for coding in Go. It has excellent plugins and
+works across platforms.
 
-Go to:
+Download from:
 
-* https://atom.io/
+* https://code.visualstudio.com/
 
-Download and install (it will open), and once in there:
+After installation, do:
 
- * In the Welcome Guide
+ * Hit <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and type in `Install exte`
+ 
+   * Hit `Enter` to accept `Install extentions`
 
-   * Click "Install package"
-
-     * Click "Open Installer"
-
-   * Search "go-plus" (by joefitzgerald)
-
-   * Install it
+   * From the list, select `Go`, and click `Install`. Wait and then click `Enable`.
 
 
-Setup `Git` and `bash` properly
--------------------------------
+Setup `Go` environment variables
+--------------------------------
 
-Right click on the desktop, and select "Git Bash Here"
+In VS Code, open `~/.profile`.
 
-Run
+> If you use `zsh`, open `~/.zshrc` instead.
 
-    atom ~/.profile
-
-If you use `zsh`, tweak `~/.zshrc` instead.
-
-This opens Atom.  Tweak your profile file to add these lines and *save* the file:
+Tweak your profile file to add these lines and *save* the file:
 
     export GOPATH=$HOME/go
     export PATH=$HOME/go/bin:$PATH
 
-Back to `Git Bash` terminal, run:
 
-    atom ~/.gitconfig
+Setup of global `Git` configuration
+-----------------------------------
 
-Edit the `~/.gitconfig` file to make sure similar lines are in there:
+Open the file `~/.gitconfig` in VS Code.
+
+Make sure similar lines are in there:
 
     [user]
 	name = Your Name
 	email = yourmail@example.com
 
-Save the files, and exit.
+Save & exit.
 
 
 Setup GitHub authentication
