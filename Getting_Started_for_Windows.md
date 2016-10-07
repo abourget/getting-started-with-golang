@@ -22,7 +22,6 @@ Go to the "System" control panel, click the "Advanced" tab. Select
 "Environment Variables" and under "System variables":
 
  * add GOPATH variable, set it to "C:\GoPath"
- * add GO15VENDOREXPERIMENT, set it to "1"
 
 
 Install Git
