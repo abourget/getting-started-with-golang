@@ -87,7 +87,6 @@ This opens Atom.  Tweak your profile file to add these lines and *save* the file
 
     export GOPATH=$HOME/go
     export PATH=$HOME/go/bin:$PATH
-    export GO15VENDOREXPERIMENT=1
 
 Back to `Git Bash` terminal, run:
 
