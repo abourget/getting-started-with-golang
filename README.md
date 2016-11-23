@@ -8,3 +8,7 @@ These two guides help you setting up Visual Studio Code, Go, Git, SSH keys and G
 This setup helps you configure Sublime Text 3 for a good Go development experience:
 
 * [Setting up Sublime Text 3](Setting_up_Sublime_properly.md)
+
+Slick and quick introduction to the language:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CF9S4QZuV30" frameborder="0" allowfullscreen></iframe>
